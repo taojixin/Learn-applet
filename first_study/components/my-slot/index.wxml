@@ -1,0 +1,11 @@
+<!--components/my-slot/index.wxml-->
+<view class="my-slot">
+  <view class="header">header</view>
+  <view class="content">
+    <!-- 小程序不支持默认插槽 -->
+    <slot></slot>
+  </view>
+  <!-- 默认插槽的解决方案：empty + 兄弟选择器 -->
+  <view class="default">哈哈哈</view>
+  <view class="footer">footer</view>
+</view>

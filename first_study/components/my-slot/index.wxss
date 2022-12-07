@@ -1,0 +1,12 @@
+/* components/my-slot/index.wxss */
+.my-slot {
+  margin: 20px 0;  
+}
+
+.default {
+  display: none;
+}
+/* 默认插槽解决方案 */
+.content:empty + .default {
+  display: block;
+}

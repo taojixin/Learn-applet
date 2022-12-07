@@ -1,0 +1,9 @@
+/* components/test-styel/index.wxss */
+.title {
+  font-size: 36rpx;
+  color: red;
+}
+
+/* view {
+  background-color: orange;
+} */

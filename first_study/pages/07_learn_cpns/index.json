@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "section-info": "/components/section-info/index",
+    "test-style": "/components/test-styel/index",
+    "tab-control": "/components/tab-control/index"
+  }
+}

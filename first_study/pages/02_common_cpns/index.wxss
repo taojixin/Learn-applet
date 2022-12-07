@@ -1,0 +1,26 @@
+/* pages/02_commom_cpns/index.wxss */
+.btn {
+  background-color: blue;
+  color: white;
+}
+.active {
+  color: blue;
+  background-color: yellow;
+}
+.item {
+  width: 100px;
+  height: 100px;
+}
+.container {
+  height: 100px;
+}
+.scroll-x {
+  display: flex;
+}
+.item {
+  
+  flex-shrink: 0;
+}
+.input {
+  border: 1px solid black;
+}

@@ -1,0 +1,4 @@
+/* pages/03_learn_wxss/index.wxss */
+.titlepage {
+  color: blue;
+}

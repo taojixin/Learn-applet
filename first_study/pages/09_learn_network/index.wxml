@@ -1,0 +1,9 @@
+<!--pages/09_learn_api/index.wxml-->
+<view class="house-list">
+  <block wx:for="{{houseList}}" wx:key="houseId">
+    <view class="item">
+      <image src="{{item.data.image.url}}" />
+      <view class="title">{{item.data.houseName}}</view>
+    </view>
+  </block>
+</view>

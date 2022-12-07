@@ -1,0 +1,85 @@
+<!--pages/02_commom_cpns/index.wxml-->
+<!-- input组件 -->
+<view>------------- input组件 -------------</view>
+<input class="input" type="text" model:value="{{message}}"/>
+
+
+<!-- scorll-view组件 -->
+<view>------------- scorll-view组件 -------------</view>
+<!-- y轴滚动 -->
+<!-- <scroll-view class="container scroll-y" scroll-y>
+  <block wx:for="{{viewColors}}" wx:key="*this">
+    <view class="item" style="background-color: {{item}};">
+      {{item}}
+    </view>
+  </block>
+</scroll-view> -->
+<!-- x轴滚动 -->
+<!-- <scroll-view enable-flex class="container scroll-x" scroll-x>
+  <block wx:for="{{viewColors}}" wx:key="*this">
+    <view class="item" style="background-color: {{item}};">
+      {{item}}
+    </view>
+  </block>
+</scroll-view> -->
+<!-- x轴滚动 -->
+<scroll-view 
+  enable-flex 
+  class="container scroll-x" 
+  scroll-x 
+  bindscrolltoupper="onScrollUpper"
+  bindscrolltolower="onScrollLower"
+  bindscroll="onScroll"
+  >
+  <block wx:for="{{viewColors}}" wx:key="*this">
+    <view class="item" style="background-color: {{item}};">
+      {{item}}
+    </view>
+  </block>
+</scroll-view>
+
+
+
+<!-- image组件 -->
+<view>---------------- image组件 ----------------</view>
+<!-- 根目录：/表示跟目录，有些地方不适用 -->
+<!-- <image src="/assets/zznh.png" mode=""/> -->
+<!-- 网络图片资源 -->
+<!-- <image src="http://libertys.cn/img/yuansheng/erzhounian.png" mode=""/> -->
+<!-- mode属性: 有很多属性值，具体看官网，常用属性值为widthFix -->
+<!-- <image src="/assets/zznh.png" mode="aspectFit"/> -->
+<image src="/assets/zznh.png" mode="widthFix" />
+<!-- 获取本地图片 -->
+<button bindtap="onChooseImg">点击获取本地图片展示</button>
+<image src="{{chooseImageUrl}}" mode="" />
+
+
+
+<!-- view组件 -->
+<view>---------------- view组件 ----------------</view>
+<view>块元素</view>
+<view hover-class="active">块元素</view>
+
+<!-- button组件 -->
+<view>---------------- button组件 ----------------</view>
+<button>块元素</button>
+<button size="mini">size属性</button>
+<button size="mini" type="primary">type属性</button>
+<button size="mini" type="warn">type属性</button>
+<button class="btn" size="mini">自定义属性</button>
+<button plain size="mini">plain属性</button>
+<button size="mini" loading>loading属性</button>
+<button size="mini" hover-class="active">hover效果</button>
+<view>open-type属性:</view>
+<button open-type="contact">contact</button>
+<view>获取用户信息：</view>
+<button bindtap="getUserInfo">用户信息</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="">用户电话</button>
+
+<!-- text组件 -->
+<view>---------------- text组件 ----------------</view>
+<text>hello world</text>
+<text user-select="{{true}}">你好，世界！</text>
+<text user-select>你好，世界！</text>
+<text>&gt;</text>
+<text decode>&gt;</text>

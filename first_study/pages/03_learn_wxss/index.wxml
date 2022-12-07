@@ -1,0 +1,7 @@
+<!--pages/03_learn_wxss/index.wxml-->
+<view class="title">全局样式</view>
+<view class="titlepage">页面中的样式</view>
+<view class="title" style="color: yellow;">行内样式</view>
+
+<!-- 单位rpx -->
+<text>在iPhone6中1px=2rpx</text>

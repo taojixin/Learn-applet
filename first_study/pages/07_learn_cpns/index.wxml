@@ -1,0 +1,27 @@
+<!--pages/07_learn_cpns/index.wxml-->
+<!-- 1.内置组件 -->
+<text>内置组件：text、button、view等</text>
+
+<!-- 2.自定义组件 -->
+<section-info
+  info="abc"
+  title="我与地坛"
+  content="要是有些事我没说，别以为我忘记了"
+  bind:titleclick="onSectionTitleClick" />
+  <section-info
+  info="cba"
+  title="黄金时代"
+  content="要是有些事我没说，别以为我忘记了"
+  bind:titleclick="onSectionTitleClick" />
+
+  <!-- 3.测试组件样式 -->
+  <test-style></test-style>
+
+  <!-- 4.tab-conrol的使用 -->
+  <tab-control
+    class="tab-control"
+    titles="{{digitalTitles}}"
+    bind:indexchange="onTabIndexChange" />
+    <button bindtap="onExecTCMethod">调用TC方法</button>
+
+<tab-control titles="{{['流行','新款','热门']}}" />
