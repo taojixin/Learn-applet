@@ -1,0 +1,21 @@
+<!-- 1.搜索框 -->
+<van-search value="{{ value }}" shape="round" background="#fafafa" placeholder="请输入搜索关键词" bind:click-input="onSearchClick" />
+
+<!-- 2.轮播图 -->
+<swiper class="banner" circular indicator-dots style="height: {{bannerHeight}}px">
+  <block wx:for="{{banners}}" wx:key="targetId">
+    <swiper-item class="item">
+      <image class="banner-image" src="{{item.imageUrl}}" mode="widthFix" bindload="onBannerImageLoad" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 3.推荐歌曲的展示 -->
+<view class="recommend">
+  <area-hander title="推荐歌曲" bind:moreclick="onRecommendMoreClick" />
+</view>
+
+
+<view class="recommend">
+  <area-hander title="巅峰榜" hasMore="{{false}}" />
+</view>

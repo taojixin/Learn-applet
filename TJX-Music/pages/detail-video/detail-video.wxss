@@ -1,0 +1,12 @@
+/* pages/detail-video/detail-video.wxss */
+/* 设置页面的宽度 */
+page {
+  height: 100vh;
+  overflow: hidden;
+}
+.video {
+  width: 100%;
+}
+.content {
+  height: calc(100% - 225px);
+}

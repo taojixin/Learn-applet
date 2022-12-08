@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "音乐推荐",
+  "navigationBarBackgroundColor": "#fafafa",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-search": "@vant/weapp/search/index",
+    "area-hander": "/components/area-header/area-header"
+  }
+}
