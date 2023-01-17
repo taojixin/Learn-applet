@@ -11,11 +11,35 @@
 </swiper>
 
 <!-- 3.推荐歌曲的展示 -->
-<view class="recommend">
+<!-- <view class="recommend">
   <area-hander title="推荐歌曲" bind:moreclick="onRecommendMoreClick" />
-</view>
+  <view class="list">
+    <block wx:for="{{recommendSongs}}" wx:key="id">
+      <song-item-v1 itemData="{{item}}"/>
+    </block>
+  </view> 
+</view> -->
 
+<!-- 4.热门歌单 -->
+<!-- <view class="hot-menu">
+  <area-hander title="热门歌单" />
+  <scroll-view class="list" scroll-x enable-flex style="width: {{screenWidth}}px">
+    <block wx:for="{{hotMenuList}}" wx:key="id">
+    <view class="item">
+      <menu-item itemData="{{item}}"></menu-item>
+    </view>
+    </block>
+  </scroll-view>
+</view> -->
+<!-- <menu-area menuList="{{hotMenuList}}" title="热门歌单" />
+<menu-area menuList="{{recMenuList}}" title="推荐歌单" /> -->
 
-<view class="recommend">
+<!-- 5.巅峰榜 -->
+<view class="ranking">
   <area-hander title="巅峰榜" hasMore="{{false}}" />
+  <view class="ranking-list">
+    <block wx:for="{{rankingInfos}}" wx:key="id">
+      <ranking-item itemData="{{item}}" key="{{index}}"/>
+    </block>
+  </view>
 </view>

@@ -28,6 +28,20 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "热门列表",
+          "pathName": "pages/detail-song/detail-song",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "a",
+          "pathName": "pages/detail-menu/detail-menu",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
